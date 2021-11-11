@@ -1,0 +1,246 @@
+/* Compiled from SCSS, so it's a bit unreadable by itself */
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-image: linear-gradient(#e4e0df, #eeedee, #f0f0f0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-top: 4rem;
+}
+
+.has-horizontal-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media all and (max-width: 767px) {
+  .has-horizontal-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.main__right-words,
+.main__left-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-bar__right i,
+.bottom-bar__left .empty,
+nav.navbar div > i {
+  color: #727170;
+}
+.bottom-bar__right i:hover,
+.bottom-bar__left .empty:hover,
+nav.navbar div > i:hover {
+  cursor: pointer;
+  color: #444343;
+}
+
+nav.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media all and (max-width: 767px) {
+  nav.navbar {
+    background-color: #e4e0df;
+  }
+}
+nav.navbar .nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+}
+@media all and (max-width: 991px) {
+  nav.navbar .nav-item {
+    padding-left: initial;
+  }
+}
+nav.navbar div > i {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+@media all and (max-width: 991px) {
+  nav.navbar div > i {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100% - 4rem);
+}
+@media all and (max-width: 767px) {
+  .main {
+    justify-content: center;
+  }
+}
+.main__left-words {
+  height: 100%;
+  align-items: flex-end;
+  position: relative;
+  left: -4rem;
+}
+.main__left-words--collection {
+  letter-spacing: 0.3rem;
+  margin: 0;
+}
+@media all and (max-width: 767px) {
+  .main__left-words--collection {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .main__left-words {
+    left: -2rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .main__left-words {
+    position: initial;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+}
+.main__left-words h1 {
+  margin: 0;
+  font-size: 17rem;
+  letter-spacing: -0.2rem;
+  line-height: 17rem;
+}
+@media all and (max-width: 991px) {
+  .main__left-words h1 {
+    font-size: 14rem;
+    line-height: 14rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .main__left-words h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+.main__left-words--buttons {
+  font-size: 0.8rem;
+  border: #222529 2px solid;
+  border-radius: 1.2rem;
+  display: flex;
+  overflow: hidden;
+}
+.main__left-words--buttons-men {
+  padding: 0.7rem 1.2rem 0.7rem 1.4rem;
+  background-color: #eeedee;
+}
+.main__left-words--buttons-men:hover {
+  cursor: pointer;
+  background-color: #222529;
+  color: white;
+}
+.main__left-words--buttons-women {
+  padding: 0.7rem 1.4rem 0.7rem 1.2rem;
+  background-color: #222529;
+  color: white;
+}
+.main__left-words--buttons-women:hover {
+  cursor: pointer;
+}
+@media all and (max-width: 767px) {
+  .main__left-words--buttons {
+    font-size: 0.6rem;
+  }
+}
+.main__right-words {
+  height: 100%;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  padding-right: 2rem;
+}
+@media all and (max-width: 991px) {
+  .main__right-words {
+    display: none;
+  }
+}
+.main__image {
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  top: 0.8rem;
+  width: 50%;
+}
+@media all and (max-width: 767px) {
+  .main__image {
+    min-height: auto;
+    left: auto;
+    right: auto;
+    top: 45%;
+    width: 80%;
+  }
+}
+@media all and (width: 768px) and (height: 1024px) {
+  .main__image {
+    bottom: 0;
+    top: auto;
+  }
+}
+@media all and (width: 1024px) and (height: 1366px) {
+  .main__image {
+    bottom: 0;
+    top: auto;
+  }
+}
+
+.bottom-bar {
+  height: 4rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-bar__left {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.bottom-bar__left:hover {
+  cursor: pointer;
+}
+.bottom-bar__left .empty:hover {
+  border-radius: 50%;
+}
+@media all and (max-width: 767px) {
+  .bottom-bar__left {
+    font-size: 0.6rem;
+  }
+}
+.bottom-bar__right i {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+@media all and (max-width: 767px) {
+  .bottom-bar__right i {
+    font-size: 1rem;
+    margin-left: initial;
+  }
+}
+@media all and (max-width: 991px) {
+  .bottom-bar__middle::before {
+    content: "SPRING SUMMER 2020";
+  }
+}
+@media all and (max-width: 767px) {
+  .bottom-bar__middle {
+    font-size: 0.6rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
