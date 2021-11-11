@@ -1,4 +1,4 @@
-# CS3219 Assignment 1
+# CS3219 Assignment A1
 
 Student Name: Zhu Hanming
 
