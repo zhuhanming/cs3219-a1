@@ -5,5 +5,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./index.css:/usr/share/nginx/html/index.css
     ports:
       - 3000:80
